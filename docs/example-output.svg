@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="420">
+  <defs>
+    <style>
+      text { font-family: "Cascadia Code","JetBrains Mono","Fira Code",Menlo,monospace; font-size: 13px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="420" rx="10" fill="#1e1e2e"/>
+
+  <!-- Title bar -->
+  <rect width="700" height="38" rx="10" fill="#313244"/>
+  <rect y="28" width="700" height="10" fill="#313244"/>
+  <circle cx="20" cy="19" r="6" fill="#ff5f57"/>
+  <circle cx="40" cy="19" r="6" fill="#febc2e"/>
+  <circle cx="60" cy="19" r="6" fill="#28c840"/>
+  <text x="350" y="24" fill="#6c7086" text-anchor="middle" font-size="12">rtor2tran-migrator</text>
+
+  <!-- Prompt -->
+  <text y="68"><tspan x="16" fill="#89b4fa">$</tspan><tspan fill="#cdd6f4"> make migrate FORCE=1</tspan></text>
+
+  <!-- Section header -->
+  <text x="16" y="104" fill="#89b4fa" font-weight="bold">Running migration</text>
+  <text x="16" y="122" fill="#585b70">────────────────────────────────────────</text>
+
+  <!-- Config lines -->
+  <text y="140" xml:space="preserve"><tspan x="16" fill="#94e2d5" font-weight="bold"> ▶</tspan><tspan fill="#cdd6f4"> SESSION_DIR=~/rtorrent/sessions</tspan></text>
+  <text y="158" xml:space="preserve"><tspan x="16" fill="#94e2d5" font-weight="bold"> ▶</tspan><tspan fill="#cdd6f4"> OUTPUT_DIR=/var/lib/transmission-daemon/.config/transmission-daemon</tspan></text>
+  <text y="176" xml:space="preserve"><tspan x="16" fill="#f9e2af" font-weight="bold"> !</tspan><tspan fill="#cdd6f4"> Transmission must be stopped before running</tspan></text>
+
+  <!-- Torrent lines -->
+  <text y="212" xml:space="preserve"><tspan x="16" fill="#a6e3a1">✔</tspan><tspan fill="#585b70">  1a2b3c4d</tspan><tspan fill="#cdd6f4" font-weight="bold">  Some.Movie.2019.1080p.WEB-DL.x264</tspan></text>
+  <text y="230" xml:space="preserve"><tspan x="16" fill="#a6e3a1">✔</tspan><tspan fill="#585b70">  2b3c4d5e</tspan><tspan fill="#cdd6f4" font-weight="bold">  Some Artist - Greatest Hits (2002) [FLAC]</tspan></text>
+  <text y="248" xml:space="preserve"><tspan x="16" fill="#a6e3a1">✔</tspan><tspan fill="#585b70">  3c4d5e6f</tspan><tspan fill="#cdd6f4" font-weight="bold">  Some.TV.Show.S09.Complete.1080p.WEB-DL.X265</tspan></text>
+  <text y="266" xml:space="preserve"><tspan x="16" fill="#a6e3a1">✔</tspan><tspan fill="#585b70">  4d5e6f7a</tspan><tspan fill="#cdd6f4" font-weight="bold">  Some Movie (2015) [BluRay] [720p] [YTS.AM]</tspan></text>
+  <text y="284" xml:space="preserve"><tspan x="16" fill="#a6e3a1">✔</tspan><tspan fill="#585b70">  5e6f7a8b</tspan><tspan fill="#cdd6f4" font-weight="bold">  Some Book Title - Author Name.epub</tspan></text>
+  <text x="16" y="302" fill="#585b70">  ... 51 more ...</text>
+
+  <!-- Summary -->
+  <text y="340" xml:space="preserve">
+    <tspan x="16" fill="#cdd6f4">  </tspan><tspan fill="#a6e3a1">✔</tspan><tspan fill="#cdd6f4">  56 migrated    </tspan><tspan fill="#f9e2af">○</tspan><tspan fill="#cdd6f4">  0 skipped    </tspan><tspan fill="#f38ba8">✗</tspan><tspan fill="#cdd6f4">  0 errors</tspan>
+  </text>
+</svg>

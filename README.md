@@ -164,24 +164,7 @@ systemctl restart transmission-daemon
 
 ### Example output
 
-```
-$ make migrate FORCE=1
-
-Running migration
-────────────────────────────────────────
- ▶ SESSION_DIR=~/rtorrent/sessions
- ▶ OUTPUT_DIR=/var/lib/transmission-daemon/.config/transmission-daemon
- ! Transmission must be stopped before running
-
-✔  1a2b3c4d  Some.Movie.2019.1080p.WEB-DL.x264
-✔  2b3c4d5e  Some Artist - Greatest Hits (2002) [FLAC]
-✔  3c4d5e6f  Some.TV.Show.S09.Complete.1080p.WEB-DL.X265
-✔  4d5e6f7a  Some Movie (2015) [BluRay] [720p] [YTS.AM]
-✔  5e6f7a8b  Some Book Title - Author Name.epub
-  ... 51 more ...
-
-  ✔  56 migrated    ○  0 skipped    ✗  0 errors
-```
+![Example migration output](docs/example-output.svg)
 
 ## Flags
 
