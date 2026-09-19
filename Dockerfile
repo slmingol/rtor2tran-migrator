@@ -9,7 +9,7 @@ ARG VERSION=dev
 RUN CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH \
     go build -ldflags "-s -w -X main.version=${VERSION}" -o rtor2tran-migrator .
 
-FROM alpine:3.19
+FROM alpine:3.24
 RUN apk add --no-cache ca-certificates
 COPY --from=builder /app/rtor2tran-migrator /usr/local/bin/rtor2tran-migrator
 ENTRYPOINT ["rtor2tran-migrator"]
