@@ -42,7 +42,7 @@ jobs:
             -o dist/rtor2tran-migrator-${{ matrix.suffix }} \
             .
       - name: Upload to release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: dist/rtor2tran-migrator-${{ matrix.suffix }}
 
